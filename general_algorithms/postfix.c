@@ -1,10 +1,11 @@
 // postfix evaluator
 // author Joshua Akangah
-#include <iostream>  
+#include <stdio.h>  
 #include <string.h>  
-  
-using namespace std; 
-  
+#include <stdlib.h>
+#include <ctype.h>
+
+    
 // Stack type  
 struct Stack  
 {  
@@ -53,7 +54,7 @@ void push(struct Stack* stack, char op)
   
   
 // The main function that returns value of a given postfix expression  
-int evaluatePostfix(char* exp)  
+int evaluatePostfix(const char* exp)  
 {  
     // Create a stack of capacity equal to expression size  
     struct Stack* stack = createStack(strlen(exp));  
@@ -65,8 +66,10 @@ int evaluatePostfix(char* exp)
     // Scan all characters one by one  
     for (i = 0; exp[i]; ++i)  
     {  
-        if (isdigit(exp[i]))  
+        if (isdigit(exp[i])){
+
             push(stack, exp[i] - '0');  
+        }
   
         else
         {  
@@ -95,9 +98,9 @@ int evaluatePostfix(char* exp)
 // Driver program to test above functions  
 int main()  
 {  
-	char exp[100];
-	cout << "Enter the expression:";
-	cin >> exp;
-    cout<<"postfix evaluation: "<< evaluatePostfix(exp) << endl;  
+	char* exp;
+	printf("Enter the expression:");
+	scanf("%c",exp);
+    printf("Postfix Evaluation: %d\n", evaluatePostfix(exp)); 
     return 0;  
 }  
