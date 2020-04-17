@@ -1,16 +1,30 @@
 # Prerequisites
 *.d
 
+<<<<<<< HEAD
 # Compiled Object files
 *.slo
 *.lo
 *.o
 *.obj
+=======
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+>>>>>>> 63c772740d6174ba87a56bc37a1056f1c6d18f6c
 
 # Precompiled Headers
 *.gch
 *.pch
 
+<<<<<<< HEAD
 # Compiled Dynamic libraries
 *.so
 *.dylib
@@ -25,8 +39,42 @@
 *.la
 *.a
 *.lib
+=======
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+>>>>>>> 63c772740d6174ba87a56bc37a1056f1c6d18f6c
 
 # Executables
 *.exe
 *.out
 *.app
+<<<<<<< HEAD
+=======
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+>>>>>>> 63c772740d6174ba87a56bc37a1056f1c6d18f6c
