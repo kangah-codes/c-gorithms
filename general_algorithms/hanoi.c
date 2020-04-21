@@ -1,5 +1,5 @@
 // author = Joshua Akangah
-// program to solve towers of hanoi in cpp
+// program to solve towers of hanoi in c
 
 #include <stdio.h>
 
