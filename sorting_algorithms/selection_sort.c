@@ -1,6 +1,4 @@
-#include <iostream>
-
-using namespace std;
+#include <stdio.h>
 
 void selection_sort(int arr[], int n){
 	for (int i=0;i<n-1;++i){
@@ -21,9 +19,9 @@ void selection_sort(int arr[], int n){
 
 void printArray(int arr[], int size) 
 { 
-    int i; 
-    for (i=0; i < size; i++) 
-        cout << ("%d ", arr[i]) << endl; 
+    for (int i=0; i < size; i++){
+        printf("%d ", arr[i]); 
+    }
 } 
 
 int main(){
