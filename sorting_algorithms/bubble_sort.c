@@ -1,7 +1,6 @@
 // author = Joshua Akangah
 
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
 void bubble_sort(int arr[], int n){
 	for (int i=0;i<n;++i){
@@ -22,19 +21,14 @@ void bubble_sort(int arr[], int n){
 	}
 }
 
-
-// print out the array
-void printArray(int arr[], int size) 
-{ 
-    int i; 
-    for (i=0; i < size; i++) 
-        cout << ("%d ", arr[i]) << endl; 
-    cout << "n" << endl; 
-} 
-
+void printArray(int arr[], int size){
+	for (int i=0;i<size;++i){
+		printf("%d ", arr[i]);
+	}
+}
 
 int main(){
-	int arr[] = {1,3465,3445,23,34,56};
+	int arr[] = {1,2234,534,242};
 
 	bubble_sort(arr, sizeof(arr)/sizeof(arr[0]));
 
